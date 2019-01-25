@@ -5,11 +5,13 @@
     
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.show_sql">true</property>
-    <!-- Conexión directa -->
+    <!-- Conexión directa 
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cursoHibernate?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">java2019</property>
-    <property name="hibernate.connection.password">2019</property>
+    <property name="hibernate.connection.password">2019</property>-->
+    
+    <property name="hibernate.connection.datasource">java:comp/env/jdbc/AUAUB</property>
     
     <property name="format_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">create</property>
